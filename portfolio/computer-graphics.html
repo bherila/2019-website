@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Signika:400,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="../N2/Resources/Js/jquery-1.10.2.min.js"></script>
+
+	
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../Dinamico/Themes/Default/Scripts/site.js"></script>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Computer Graphics</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+
+<link href="../Dinamico/Themes/Herila/Content/Site.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+<link rel="canonical" href="computer-graphics.html" />
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+	
+
+
+	<style type="text/css">
+		html,body { padding: 0; margin: 0; background: #eee !important; }
+		body,html,p {  font-family: Signika; color: #333; font-size: 14px; font-weight: 300; }
+		h1,h2,h3,h4,h5 { font-family: Signika; font-weight: 400; color: #518D3F; }
+		h1 { font-size: 26px; }
+		h2 { font-size: 20px; }
+		h3 { font-size: 14px; }
+
+		.mgleft  { padding-left:  1em; }
+		.mgright { padding-right: 1em; }
+		#main-container { padding: 0; }
+		#logo {  z-index: 999999; }
+		#toprow { background-color: #518D3F;  color: white; padding-top: 1em; }
+		#toprow>div { height: 3em; }
+		@media (max-width: 767px) { #logo { position: absolute; right: 1em; top: 0; } }
+		@media (min-width: 768px) { #logo { position: absolute; left: 2em; top: 0; } }
+		#toprow * { line-height: 50px !important; }
+		#toprow h1 { font-size: 25px !important; color: #fff; font-weight: 400 !important; }
+		#toprow a:link, #toprow a:visited { color: #fff; } 
+		#topnav {  }
+		#topnav a:link, #topnav a:visited { font-size: 22px; font-weight: 400; }
+		.footer { font-size: 14px; color: #666; } 
+		.print { display: none; }
+
+		.nav > li.disabled.nav-header > a {
+			cursor: default;
+			font-size: 12px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		
+		#highlights ul { list-style-type: square; padding: 0 0 0 1.5em; color: #666; }
+		#highlights ul li { margin: 0.5em 0;  }
+
+		.contact { margin-bottom: 1em; }
+		.contact td {  padding: 0; margin: 0; }
+		.contact td:first-child { font-weight: bold }
+
+		.rating-table { width: 100%; }
+		.rating { width: 80px; }
+		.star { background: url(../N2/Resources/Icons/star.png); height: 16px; overflow: hidden; }
+		.x { width: 16px; }
+		.xx { width: 32px; }
+		.xxx { width: 48px; }
+		.xxxx { width: 64px; }
+		.xxxxx { width: 80px; }
+
+	</style>
+	<style type="text/css" media="print">
+		body, html { font-size: 90%; }
+		h1 { font-size: 20pt; }
+		.noprint { display: none; }
+		.print { display: block !important; }
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function () { $("#grn").height($("#toprow").height()); });
+	</script>
+</head>
+<body>
+	<div class="noprint">
+
+	</div>
+	<div class="container" id="main-container" style="overflow: hidden;">
+
+		<div id="grn" class="noprint" style="position: absolute; left: 0; top: 0; width: 100%; background-color: #518D3F; height: 5em; z-index: -1000; padding-top: 1em;"></div>
+
+		<!-- Header row -->
+		<div class="row noprint" id="toprow">
+			<div class="col-sm-1" style="position: relative;">
+				<img src="../Dinamico/Themes/Herila/content/kokopelli.png" id="logo" />
+			</div>
+			<div class="col-md-2 col-sm-3" id="toph1">
+				<div class="mgleft">
+					<h1 style="margin-top: 0;"><a href="../index.html">Ben&nbsp;Herila</a></h1>
+				</div>
+			</div>
+			<div class="col-md-9 col-sm-8" id="topnav">
+					<span>[ <a href="../photos.html">Photos</a> ] </span>
+					<span>[ <a href="../portfolio.html">Portfolio</a> ] </span>
+					<span>[ <a href="../cooking.html">Cooking</a> ] </span>
+					<span>[ <a href="../contact.html">Contact</a> ] </span>
+					<span>[ <a href="../resume-viewer.html">Resume</a> ] </span>
+			</div>
+		</div>
+
+		<!-- Body background stretch -->
+		<div class="row noprint">
+			<div class="col-sm-1 hidden-phone">&nbsp;</div>
+			<div class="col-sm-11 col-xs-12" style="background: #fff; margin-bottom: -99999px; padding-bottom: 99999px;">&nbsp;</div>
+		</div>
+
+		<!-- Print header -->
+		<div class="row print">
+			<div class="col-xs-12"><h1 style="margin: 0; padding: 0;">Benjamin W. Herila</h1></div>
+			<div style="position: absolute; right: 0; top: 0;"><img src="https://www.bherila.net/img/kokopelli.png" /></div>
+		</div>
+
+
+		<!-- Page area -->
+			<!-- Body area -->
+			<div class="row" style="overflow: hidden;">
+				<div class="noprint col-sm-1">&nbsp;</div>
+				<div class="noprint col-sm-2">
+
+					<div id="menu0" class="menuNavPart">
+	<ul class="nav nav-stacked">
+		<li class="nav-header disabled"><a href="../portfolio.html">Portfolio</a></li>
+		<li class="nav-item"><a href="teaching.html">Teaching</a></li>
+		<li class="nav-item active"><a>Computer Graphics</a></li>
+		<li class="nav-item"><a href="playerstape.html">PlayersTape</a></li>
+		<li class="nav-item"><a href="the-walsh-company.html">The Walsh Company</a></li>
+		<li class="nav-item"><a href="artificial-intelligence.html">Artificial Intelligence</a></li>
+		<li class="nav-item"><a href="more-projects.html">More Projects</a></li>
+
+	</ul>
+</div>								
+
+				</div>
+				<div class="col-sm-9">
+					<div class="mgright">
+						
+
+
+<h1>Computer Graphics</h1>
+
+<div>
+<p>One of my primary focuses in Computer Science involves Computer Graphics.&nbsp;</p>
+</div>
+
+
+
+
+	<div class="imageAndText">
+		<div class="row">
+			<div class="col-sm-8"><h2>Ray Tracing</h2>
+
+<p>The hallmark project of CS123 is a standard recursive ray tracer which supports several types of primitives, texture mapping, shadows, point/area/directional lighting, and specular highlights. I implemented a basic raytracer and several enhancements, including support for arbitrary meshes, anti-aliasing, multi-threading, texture scaling and filtering. In addition, I implemented a kd-tree to accelerate the intersection tests.</p>
+
+<h2>Path Tracing (Polaris)</h2>
+
+<p>In a joint project with my roommate, Paul Sastrasinh, we extended the CS123 ray tracer to perform uni and bi-directional path tracing. This was an interesting experiment and it enabled us to render all kinds of interesting scenes.</p>
+</div>
+			<div class="col-sm-4"><hr /><img class="" alt="" src="../upload/projects/ray_200.jpg" /></div>
+		</div>
+	</div>
+
+
+
+	<div class="imageAndText">
+		<div class="row">
+			<div class="col-sm-8"><h2>Photon Mapping</h2>
+
+<p>As a student in CS224, we built upon Milton to implement photon mapping. Milton was implemented by Matt Jacobs and Travis Fischer, two other students from Brown CS, and it contains a scenegraph, ray tracer, and an implementation of Metropolis Light Transport (MLT).</p>
+
+<h2>High Performance Computing</h2>
+
+<p>We extended Polaris to work on a distributed computing cluster. Polaris compiles and runs on both Brown&#39;&#39;s Oscar HPC cluster (over 200 nodes) and the NICS Kraken cluster (over 9000 nodes) which is one of the most powerful supercomputers in the world. Polaris could be used to render extremely detailed scenes and high-resolution images by rendering a single frame in parallel. It can also be used to render video clips by rendering multiple frames in parallel.</p>
+</div>
+			<div class="col-sm-4"><hr /><img class="" alt="" src="../upload/projects/photon_200.jpg" /></div>
+		</div>
+	</div>
+
+<section id="fluidGridSystem">
+	<div class="container" style="padding: 0;">
+		<div class="row show-grid columns twocolumns clearfix ">
+			<div class="column column1 col-md-6">
+
+<div class="part text">
+<h2>Mesh-based Image Deformation</h2>
+
+<p>Mesh based image deformations (Bilinear, triangulation using barycentric coordinates, and perspective). Support for warping from an arbitrary quadrilateral or triangular mesh to another, arbitrary quadrilateral or triangular mesh. (Java)</p>
+
+</div>
+			</div>
+			<div class="column column2 col-md-6">
+<hr/>
+
+
+
+		<div class="img-block img-responsive img-block-middle " style="text-align: center;">
+			<p><img class="img-responsive" src="../upload/projects/lena_mesh_small.jpg" alt="" /></p>
+		</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="part text">
+<h2>Downloads</h2>
+
+<p>Because the ray tracing and photon mapping projects are still assignments at Brown, the source code is not available for download from this web site. Source code may be made available to qualified academic institutions by e-mailing&nbsp;<a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ccafbffdfeffa4a9ada8b8adbf8cafbfe2aebea3bba2e2a9a8b9e2">[email&#160;protected]</a></p>
+
+<p>Compiled statically-linked binaries may be downloaded below:</p>
+
+<ul style="margin-left:20px">
+	<li>Ray, compiled for Windows x86, with sample scenes</li>
+	<li>Photon Mapping, compiled for Windows x86, with sample scenes</li>
+	<li>Path Tracing, compiled for Windows x86</li>
+	<li>HPC sample render (JPG)</li>
+</ul>
+
+</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-11">
+					<div class="mgright footer">
+<hr/>
+<p>&copy; 2006-2018 Benjamin Herila, All Rights Reserved. </p>
+<a href="http://www.iubenda.com/privacy-policy/673941" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+<script data-cfasync="false" src="../cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "http://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+					</div>
+				</div>
+			</div>
+		
+	</div>
+
+	
+
+</body>
+</html>
