@@ -55,6 +55,7 @@ li {
   background-image: url('../images/background.jpg');
   background-position: 50% 50%;
   background-size: cover;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -96,6 +97,14 @@ li {
   font-family: Montserrat, sans-serif;
   font-size: 17px;
   font-weight: 100;
+}
+
+.cta-button:hover {
+  background-color: #fa5b5b;
+}
+
+.cta-button:visited {
+  color: #fff;
 }
 
 .header {
