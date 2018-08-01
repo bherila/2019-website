@@ -433,3 +433,21 @@ li {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .pa-branding {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 479px) {
+  .header-expando {
+    display: none;
+  }
+}
+
